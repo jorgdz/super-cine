@@ -17,12 +17,12 @@
 	
     <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
         <property name="driverClassName" value="org.postgresql.Driver" />	
-       	<property name="url" value="jdbc:postgresql://localhost:5432/cine?useSSL=false" />
+       	<property name="url" value="jdbc:postgresql://ec2-184-73-181-132.compute-1.amazonaws.com:5432/d44vsadkd5tref?reconnect=true" />
+		<property name="username" value="iwchlotmxkuxml" />
+		<property name="password" value="2668a24722a232858ce85d0cf7549de2beff9934127290f18b3a04d68323dcb4" />
+       	<!--<property name="url" value="jdbc:postgresql://localhost:5432/cine?useSSL=false" />
 		<property name="username" value="postgres" />
-		<property name="password" value="admin" />
-		<!--<property name="url" value="jdbc:postgresql://ec2-54-225-150-216.compute-1.amazonaws.com:5432/de9m8nqjsaa4tg?reconnect=true" />
-		<property name="username" value="ytrrrijqykhjsa" />
-		<property name="password" value="6db5c2eb12635258d527291463a83fd0ff53f7c9915dc77c50cd0990dab3724f" /> -->
+		<property name="password" value="admin" /> -->
     </bean>
 
     <bean id="jpaVendorAdapter" class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter">
