@@ -18,8 +18,10 @@
         
         <!-- Configuración para subir archivos temporales en las carpeta tmp -->
 		<multipart-config>
-			<location>c:\tmp</location>
-		</multipart-config>			
+			<!--<location>c:\tmp</location>-->
+			<location>/tmp</location>
+		</multipart-config>		
+			
     </servlet>
     <servlet-mapping>
         <servlet-name>dispatcher</servlet-name>
