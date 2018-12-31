@@ -137,15 +137,8 @@
 					      <div class="btn light-blue accent-4">
 						        <span>Imagen de película</span>
 						        <form:hidden path="imagen"/>
-						        <form:hidden path="name_image"/>
-						        <c:choose>
-						        	<c:when test="${pelicula.id == 0}">
-										<input type="file" name="archivoImagen" required="required" />					        						        	
-						        	</c:when>
-						        	<c:otherwise>
-						        		<input type="file" name="archivoImagen" />					        						        							        	
-						        	</c:otherwise>
-						        </c:choose>				        	
+						        <form:hidden path="name_image"/>					        
+						        <input type="file" name="archivoImagen" />					        						        							        							        					        	
 					      </div>
 					      <div class="file-path-wrapper">
 				        		<input class="file-path validate" type="text">

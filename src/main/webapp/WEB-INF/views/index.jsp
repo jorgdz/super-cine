@@ -30,7 +30,7 @@
             <div class="carousel carousel-slider">
             	
             	<c:forEach items="${banners}" var ="banner">
-            		<a class="carousel-item" href="#"><img src="${banner.archivo}" alt="${banner.titulo}" title="${banner.titulo}"></a>
+            		<a class="carousel-item" href="#"><img src="${banner.archivo}" height="280" alt="${banner.titulo}" title="${banner.titulo}"></a>
             	</c:forEach>
             
             </div>

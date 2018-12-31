@@ -22,7 +22,7 @@
 		<property name="password" value="2668a24722a232858ce85d0cf7549de2beff9934127290f18b3a04d68323dcb4" />
        	<!--<property name="url" value="jdbc:postgresql://localhost:5432/cine?useSSL=false" />
 		<property name="username" value="postgres" />
-		<property name="password" value="admin" /> -->
+		<property name="password" value="admin" />-->
     </bean>
 
     <bean id="jpaVendorAdapter" class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter">
@@ -40,13 +40,13 @@
 	<bean id="transactionManager" class="org.springframework.orm.jpa.JpaTransactionManager">
 		<property name="entityManagerFactory" ref="entityManagerFactory" />
 	</bean>
-
+    
     <security:http auto-config="true">
-        <security:intercept-url pattern="/peliculas/**" access="hasAnyAuthority('EDITOR', 'GERENTE')" />
-		<security:intercept-url pattern="/horarios/**" access="hasAnyAuthority('EDITOR', 'GERENTE')" />
-		<security:intercept-url pattern="/noticias/**" access="hasAnyAuthority('EDITOR', 'GERENTE')" />
-		<security:intercept-url pattern="/banners/**" access="hasAnyAuthority('GERENTE')" />
-		<security:intercept-url pattern="/usuarios/**" access="hasAnyAuthority('GERENTE')" />
+        <security:intercept-url pattern="/peliculas/*" access="hasAnyAuthority('EDITOR', 'GERENTE')" />
+		<security:intercept-url pattern="/horarios/*" access="hasAnyAuthority('EDITOR', 'GERENTE')" />
+		<security:intercept-url pattern="/noticias/*" access="hasAnyAuthority('EDITOR', 'GERENTE')" />
+		<security:intercept-url pattern="/banners/*" access="hasAnyAuthority('GERENTE')" />
+		<security:intercept-url pattern="/usuarios/*" access="hasAnyAuthority('GERENTE')" />
         
         <security:form-login
                 login-page="/login-form"

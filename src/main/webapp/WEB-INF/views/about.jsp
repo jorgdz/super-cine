@@ -36,7 +36,7 @@
                             <h5>DETALLES</h5>
                         </div>
                         <div class="card-content">
-                            <p>Aplicación de SuperCine desarrollada por <strong>Ing. Sistemas Jorge Diaz </strong> en <strong>Java</strong> Con el Framework Spring</p>
+                            <p>Aplicación de SuperCine desarrollada por <strong>Ing. Sistemas Jorge Diaz </strong> en <strong>Java</strong></p>
                         </div>
                         <div class="card-action">
                             <a href="${root}">Inicio</a>
